@@ -1,3 +1,9 @@
-name: Staging deployment
+name: APP_Staging
 
 on: 
+  pull_request:
+    types: PULL_LABEL
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
